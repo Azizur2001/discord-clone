@@ -1,4 +1,8 @@
-import { customCtx, customMutation, customQuery } from "convex-helpers/server/customFunctions";
+import {
+  customCtx,
+  customMutation,
+  customQuery,
+} from "convex-helpers/server/customFunctions";
 import { getCurrentUser } from "./user";
 import { mutation, query } from "../_generated/server";
 
@@ -23,5 +27,3 @@ export const authenticatedMutation = customMutation(
     return { user };
   })
 );
-
-// 21:30
